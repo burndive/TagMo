@@ -69,7 +69,6 @@ public class AmiiboData {
         tagData.position(UID_OFFSET);
         tagData.put(value, 0x0, UID_LENGTH - 1);
         tagData.put(0x0, value[0x8]);
-        tagData.put(UID_OFFSET, (byte) 0x04);
     }
 
     public long getAmiiboID() {
